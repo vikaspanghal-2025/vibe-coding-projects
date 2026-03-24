@@ -1,4 +1,4 @@
-# Vibe Coding Projects 🚀
+# Live Apps 🚀
 
 A collection of interactive web dashboards built with React, TypeScript, and Recharts — deployed serverlessly on AWS Amplify.
 
