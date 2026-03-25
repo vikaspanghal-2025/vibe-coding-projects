@@ -7,7 +7,7 @@ A collection of interactive web dashboards built with React, TypeScript, and Rec
 ### 1. Smart Home Sensor Dashboard
 Real-time IoT sensor monitoring dashboard with live-updating data, anomaly detection, and correlation analysis.
 
-**[Live Demo →](https://main.d2ruu6sjflya6w.amplifyapp.com)**
+**[Live App Link →](https://main.d2ruu6sjflya6w.amplifyapp.com)**
 
 **Features:**
 - Real-time data streaming (1s intervals) for 5 smart home sensors
@@ -25,7 +25,7 @@ Real-time IoT sensor monitoring dashboard with live-updating data, anomaly detec
 ### 2. Market & Customer Sentiment Dashboard
 Sentiment analysis dashboard for Amazon DynamoDB and Amazon Keyspaces, aggregating data from Reddit, StackOverflow, G2, PeerSpot, LinkedIn, X, and community forums.
 
-**[Live Demo →](https://main.d1jng0r6vthxw5.amplifyapp.com)**
+**[Live App Link →](https://main.d1jng0r6vthxw5.amplifyapp.com)**
 
 **Features:**
 - Product switcher between DynamoDB and Keyspaces
@@ -76,6 +76,6 @@ Both projects are deployed on AWS Amplify as serverless static sites with HTTPS 
 ### 3. Amazon Keyspaces Pricing Calculator
 Interactive pricing calculator for Amazon Keyspaces (for Apache Cassandra) that helps estimate costs based on read/write throughput, storage, and capacity modes.
 
-**[Live Demo →](https://aws-samples.github.io/sample-pricing-calculator-for-keyspaces/)**
+**[Live App Link →](https://aws-samples.github.io/sample-pricing-calculator-for-keyspaces/)**
 
 **Source:** [aws-samples/sample-pricing-calculator-for-keyspaces](https://github.com/aws-samples/sample-pricing-calculator-for-keyspaces)
