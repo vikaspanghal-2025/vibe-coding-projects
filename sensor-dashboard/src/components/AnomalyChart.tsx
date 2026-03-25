@@ -8,12 +8,13 @@ interface Props {
 }
 
 export default function AnomalyChart({ data }: Props) {
+  const anomalyWindow = Date.now() - 60_000; // show last 60 seconds only
   const anomalies: { time: number; temperature: number; sensor: string; color: string }[] = [];
 
   for (const [sensor, readings] of Object.entries(data)) {
     const config = SENSOR_CONFIGS[sensor as SensorType];
     for (const r of readings) {
-      if (r.status === 'error' || r.status === 'warning') {
+      if (r.timestamp >= anomalyWindow && (r.status === 'error' || r.status === 'warning')) {
         anomalies.push({
           time: r.timestamp,
           temperature: r.temperature,
@@ -35,7 +36,7 @@ export default function AnomalyChart({ data }: Props) {
 
   return (
     <div className="chart-container">
-      <h3 className="chart-title">Anomaly Detection — {anomalies.length} events</h3>
+      <h3 className="chart-title">Anomaly Detection (last 60s) — {anomalies.length} events</h3>
       <ResponsiveContainer width="100%" height={280}>
         <ScatterChart margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="#2d3748" />

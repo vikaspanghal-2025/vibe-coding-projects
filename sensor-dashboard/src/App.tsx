@@ -38,8 +38,9 @@ function App() {
     return sum + (latest?.powerUsage || 0);
   }, 0);
 
+  const recentWindow = Date.now() - 30_000; // last 30 seconds
   const anomalyCount = ALL_SENSORS.reduce((sum, s) => {
-    return sum + data[s].filter(r => r.status === 'error' || r.status === 'warning').length;
+    return sum + data[s].filter(r => r.timestamp >= recentWindow && (r.status === 'error' || r.status === 'warning')).length;
   }, 0);
 
   return (

@@ -13,7 +13,7 @@ function randomBetween(min: number, max: number) {
 
 // Simulate anomalies ~2% of the time
 function maybeAnomaly(value: number, range: [number, number]): { value: number; isAnomaly: boolean } {
-  if (Math.random() < 0.02) {
+  if (Math.random() < 0.005) {
     const spike = Math.random() > 0.5
       ? range[1] + (range[1] - range[0]) * 0.3
       : range[0] - (range[1] - range[0]) * 0.2;
