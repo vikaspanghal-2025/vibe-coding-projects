@@ -70,3 +70,12 @@ Both projects are deployed on AWS Amplify as serverless static sites with HTTPS 
 - [Recharts](https://recharts.org/) - Charting library
 - [Vite](https://vitejs.dev/) - Build tool
 - [AWS Amplify](https://aws.amazon.com/amplify/) - Hosting
+
+---
+
+### 3. Amazon Keyspaces Pricing Calculator
+Interactive pricing calculator for Amazon Keyspaces (for Apache Cassandra) that helps estimate costs based on read/write throughput, storage, and capacity modes.
+
+**[Live Demo →](https://aws-samples.github.io/sample-pricing-calculator-for-keyspaces/)**
+
+**Source:** [aws-samples/sample-pricing-calculator-for-keyspaces](https://github.com/aws-samples/sample-pricing-calculator-for-keyspaces)
